@@ -18,10 +18,8 @@ def index():
 def predict():
     # Get target future date from user input
     future_date_str = request.form['future_date']
-    future_date = datetime.strptime(future_date_str, "%Y-%m-%d")
-    today = datetime.today()
-    
-    # Calculate how many days ahead
+    future_date = datetime.strptime(future_date_str, "%Y-%m-%d").date()
+    today = datetime.today().date()
     n_days = (future_date - today).days
     if n_days <= 0:
         return render_template('index.html', error="Please enter a future date.")
