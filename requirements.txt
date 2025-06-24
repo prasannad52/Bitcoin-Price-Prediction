@@ -1,8 +1,7 @@
 pandas 
-python-3.11.9
 yfinance
 numpy
-tensorflow
+tensorflow==2.15.0
 seaborn
 matplotlib
 scikit-learn
