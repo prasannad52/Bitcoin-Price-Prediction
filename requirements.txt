@@ -1,10 +1,6 @@
-# First we will import the necessary Library 
 pandas
 numpy
-datetime
 matplotlib
-
-# For Evaluation we will use these library
 scikit-learn
 tensorflow
 plotly
