@@ -1,6 +1,7 @@
 pandas 
 yfinance
 numpy
+tensorflow==2.15.0
 seaborn
 matplotlib
 scikit-learn
