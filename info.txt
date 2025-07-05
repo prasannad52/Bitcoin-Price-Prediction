@@ -1,0 +1,81 @@
+✅ 1. A Search Algorithm*
+Typical Use: Pathfinding in graphs (used in games, robotics, etc.)
+Usage in Bitcoin Prediction (Conceptual Approach):
+
+Use A* to find the optimal investment path by treating each possible action (buy, sell, hold) as a node.
+Define a heuristic like future price trends or technical indicators (e.g., RSI, MACD) to estimate the "cost-to-go."
+You can frame it as a decision-making problem, finding the optimal set of decisions that maximizes profit over time using A* as a planning tool.
+
+➡ Not for direct prediction, but useful in strategy simulation or automated trading bots.
+
+
+
+✅ 2. BFS & DFS Algorithm
+Typical Use: Graph traversal, search algorithms.
+
+Usage in Bitcoin Prediction (Conceptual Approach):
+
+Model Bitcoin market behavior as a state tree or graph (e.g., different price levels, news sentiments, indicators).
+Use DFS/BFS to explore possible price sequences or market conditions.
+DFS can simulate deep long-term outcomes, BFS can give shallow, broad perspectives.
+
+➡ Not directly used for prediction, but can aid in scenario generation, event tracing, or rule-based strategy building.
+
+
+
+✅ 3. Naive Bayes Algorithm
+Typical Use: Classification (Spam detection, sentiment analysis).
+
+Usage in Bitcoin Prediction:
+
+Use Naive Bayes to predict market movement direction: Up / Down based on features like:
+News sentiment
+Tweet volume
+Volume traded
+Past movement (e.g., last 5 min/hours trend)
+Treat the prediction as a classification problem, not continuous value.
+
+➡ Use for movement direction prediction instead of exact price.
+
+
+
+✅ 4. Candidate Elimination Algorithm
+Typical Use: Concept learning in version spaces (ML theory)
+
+Usage in Bitcoin Prediction:
+
+Use historical data to learn the boundary conditions (general and specific hypotheses) that define profitable or risky trades.
+Helps in rule-based decision-making:
+E.g., "If price increases and volume drops, then…"
+Train it on labeled trade situations to learn what trading patterns lead to gains or losses.
+
+➡ Good for learning trading patterns, not exact price prediction.
+
+
+
+✅ 5. LWR (Locally Weighted Regression)
+Typical Use: Regression with emphasis on nearby data points.
+
+Usage in Bitcoin Prediction:
+
+For every prediction point (e.g., tomorrow’s price), LWR gives higher importance to recent similar data points.
+It adapts well to non-linear, fast-changing markets like crypto.
+Especially useful for short-term price prediction, as crypto markets are highly volatile.
+
+➡ Ideal for your project’s core goal of predicting prices.
+
+
+
+✅ 6. KNN (K-Nearest Neighbors)
+Typical Use: Classification and Regression.
+
+Usage in Bitcoin Prediction:
+
+Use KNN Regression to find the k most similar historical price patterns and average their future outcomes.
+Input features can be:
+Previous prices (windowed)
+Volume
+Indicators (MACD, RSI)
+Predict next price based on neighboring similar market states.
+
+➡ Simple yet powerful baseline regression model for your task.
